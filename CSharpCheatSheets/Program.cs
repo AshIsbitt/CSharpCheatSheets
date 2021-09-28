@@ -24,6 +24,32 @@ namespace CSharpCheatSheets
 
             // String searching
             Console.WriteLine(aFriend.Contains('L'));
+
+            // Integer maths
+            // C# uses standard BIDMAS order of operations
+            int a = 18;
+            int b = 6;
+            int c = a+b;
+            Console.WriteLine(c);
+
+            int d = 19 + 23;
+            int e = 8;
+            int f = d / e;
+            Console.WriteLine(f);
+
+            // int length
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
+
+            //Double
+            double g = 14000605;
+            Console.WriteLine(g);
+
+			double i = 19+23;
+			double j = 8;
+            double h = i / j;
+            Console.WriteLine(h);
+
         }
     }
 }
