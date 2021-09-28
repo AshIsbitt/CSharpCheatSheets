@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CSharpCheatSheets
 {
@@ -6,7 +6,9 @@ namespace CSharpCheatSheets
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        	//  Variable initialisation and inline strings (f-strings)
+        	sstring aFriend = "Liliana";
+            Console.WriteLine($"Hello {aFriend}!");
         }
     }
 }
