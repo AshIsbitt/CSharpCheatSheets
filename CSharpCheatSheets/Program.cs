@@ -42,6 +42,7 @@ namespace CSharpCheatSheets
             Console.WriteLine(int.MinValue);
 
             //Double
+            // long and short are both also numeric data types
             double g = 14000605;
             Console.WriteLine(g);
 
@@ -49,6 +50,16 @@ namespace CSharpCheatSheets
 			double j = 8;
             double h = i / j;
             Console.WriteLine(h);
+
+            // Decimals
+            //The 'M' tells C# to treat it like a decimal. Otherwise, it gets seen as a double,
+            //even with the 'decimal' variable type
+            decimal k = 1.1M;
+            decimal l = 3.3M;
+            Console.WriteLine(k/l);
+
+			//pi
+            Console.WriteLine(Math.PI);
 
         }
     }
