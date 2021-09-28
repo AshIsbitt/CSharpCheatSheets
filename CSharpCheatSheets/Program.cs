@@ -16,7 +16,14 @@ namespace CSharpCheatSheets
 			Console.WriteLine($"{aFriend2.TrimStart()}");
 			Console.WriteLine($"{aFriend2.TrimEnd()}");
 			Console.WriteLine($"{aFriend2.Trim()}");
-            
+			Console.WriteLine($"{aFriend2.ToUpper()}");
+			Console.WriteLine($"{aFriend2.ToLower()}");
+
+            aFriend2 = aFriend2.Replace("   ", "_");
+            Console.WriteLine(aFriend2);
+
+            // String searching
+            Console.WriteLine(aFriend.Contains('L'));
         }
     }
 }
