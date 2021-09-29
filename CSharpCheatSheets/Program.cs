@@ -1,5 +1,6 @@
 // "using" is importing libraries - system is a default because it's the standard library
 using System;
+using System.Collections.Generic;
 
 // Used for organisation, a grouping thing for multiple classes. Basically creating your own
 // libraries?
@@ -92,8 +93,43 @@ namespace CSharpCheatSheets
 			} while (counter < 10);
 
 			// FOR loop
+			for (int index = 0; index < 10; index++) {
+				Console.WriteLine($"Index is {index}");
+			}
+
+			//Loops and conditionals combined
+			int sum = 0;
+
+			for (int m = 1; m <= 20; m++) {
+				if (m % 3 == 0) {
+					sum += m;
+				}
+			}
+
+			Console.WriteLine($"The sum is {sum}");
+
+			// Arrays, Lists, Collections
+			// Needs System.Collections.Generic;
+
+			// "var" is a generic varaible initialisation type, it's better to be explicit though
+			var names = new List<string> {"Faye", "Connor"};
+			names.Add("Tom");
+			names.Add("Renee");
+			names.Remove("Connor");
+
+			// foreach takes each item in a list and iterates through them automatically
+			foreach (var name in names) {
+				Console.WriteLine($"Hello {name.ToUpper()}!");
+			}
+
+			Console.WriteLine(names[0]);
+
+			// List manipulation
+			// If an item doesn't exist, IndexOf returns -1
+			Console.WriteLine($"Found Faye at {names.IndexOf("Faye")}");
+
 			
-			
+
         }
     }
 }
