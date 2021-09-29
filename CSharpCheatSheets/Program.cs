@@ -128,8 +128,23 @@ namespace CSharpCheatSheets
 			// If an item doesn't exist, IndexOf returns -1
 			Console.WriteLine($"Found Faye at {names.IndexOf("Faye")}");
 
-			
+			Console.WriteLine(string.Join(", ", names));
+			names.Sort();
+			Console.WriteLine(string.Join(", ", names));
 
+			// List of other Types
+			var fibNums = new List<int> {1, 1};
+
+			while (fibNums.Count < 20) {
+				var prev = fibNums[fibNums.Count - 1];
+				var prev2 = fibNums[fibNums.Count - 2];
+
+				fibNums.Add(prev + prev2);
+			}
+
+			foreach (var item in fibNums) {
+				Console.WriteLine(item);
+			}
         }
     }
 }
