@@ -17,3 +17,4 @@ dotnet in terminal.
 * `dotnet new gitignore` - generates a full gitignore file for all the files that `new console`
 creates
 * `dotnet run` - finds a `.csproj` file and runs all cs code it can find
+* `dotnet watch run` - Continually run every time the file is saved without recompiling everything.

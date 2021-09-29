@@ -9,7 +9,7 @@ namespace CSharpCheatSheets
     {
     	// Static - the main method isn't going to change dynamically as the program runs
     	// void - what the method returns
-    	// string[] args - a string array of arguments that the method is being passed. 
+    	// string[] args - a string array of arguments that the method is being passed.
         static void Main(string[] args)
         {
         	//  Variable initialisation and inline strings (f-strings)
@@ -79,6 +79,21 @@ namespace CSharpCheatSheets
 
        		// && is AND || is OR
 
+       		// WHILE loops
+       		int counter = 0;
+       		while (counter < 10) {
+				Console.WriteLine($"Counter is {counter}");
+				counter++;
+       		}
+
+			do {
+				Console.WriteLine($"Counter is {counter}");
+				counter++;
+			} while (counter < 10);
+
+			// FOR loop
+			
+			
         }
     }
 }
