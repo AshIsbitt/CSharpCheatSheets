@@ -1,9 +1,15 @@
+// "using" is importing libraries - system is a default because it's the standard library
 using System;
 
+// Used for organisation, a grouping thing for multiple classes. Basically creating your own
+// libraries?
 namespace CSharpCheatSheets
 {
     class Program
     {
+    	// Static - the main method isn't going to change dynamically as the program runs
+    	// void - what the method returns
+    	// string[] args - a string array of arguments that the method is being passed. 
         static void Main(string[] args)
         {
         	//  Variable initialisation and inline strings (f-strings)
@@ -27,7 +33,7 @@ namespace CSharpCheatSheets
 
             // Integer maths
             // C# uses standard BIDMAS order of operations
-            int a = 18;
+            int a = 10;
             int b = 6;
             int c = a+b;
             Console.WriteLine(c);
@@ -60,6 +66,18 @@ namespace CSharpCheatSheets
 
 			//pi
             Console.WriteLine(Math.PI);
+
+			// IF Statements
+			// If there's more than one line indented under an IF/ELSE, you'll need braces
+			// while a single line doesn't need them (but it's better to include them anyway)
+            if (a + b  > 20) {
+            	Console.WriteLine("Greater than 20");
+			}
+           else {
+           		Console.WriteLine("Less than 20");
+       		}
+
+       		// && is AND || is OR
 
         }
     }
