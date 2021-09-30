@@ -55,5 +55,21 @@ namespace Bank_OOP {
 			var withdrawal = new Transaction(-amount, date, note);
 			allTransactions.Add(withdrawal);
 		}
+
+		public string GetAccountHistory()
+		{
+			var report = new StringBuilder();
+
+			//Header of lines
+			report.AppendLine("Date\t\tAmount\t\tNote");
+			
+			foreach (var item in allTransactions)
+			{
+				//add each row
+				report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+			}
+			
+			return report.ToString();
+		}
 	}
 }
