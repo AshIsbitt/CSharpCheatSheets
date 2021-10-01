@@ -21,11 +21,11 @@ namespace Bank_OOP
             //     Console.WriteLine("Exception caught: negative balance");
             //     Console.WriteLine(e.ToString());
             // }
-            
+
             account.MakeWithdrawal(50, DateTime.Now, "xbox game");
             Console.WriteLine(account.Balance);
 
-			Console.WriteLine(account.GetAccountHistory());
+            Console.WriteLine(account.GetAccountHistory());
 
         }
 
