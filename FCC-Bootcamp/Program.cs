@@ -120,7 +120,18 @@ namespace FCC_Bootcamp
             Console.WriteLine($"Day: {GetDay(3)}");
 
             // While Loops
-            
+            int index = 6;
+            while (index <= 5)
+            {
+                 Console.WriteLine(index);
+                 index++;
+            }
+
+            do
+            {
+                Console.WriteLine(index);
+                index++;
+            } while (index <= 5);
         }
 
         // Creating new methods
