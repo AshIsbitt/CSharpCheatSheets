@@ -34,12 +34,13 @@ namespace FCC_Bootcamp
             Console.WriteLine(phrase.Length); // This is an attribute, not a method
             Console.WriteLine(phrase.ToUpper());
             Console.WriteLine(phrase.ToLower());
-            Console.WriteLine(phrase.Contains("World")); // Unlike, python, .contains works on strings
-            
+            Console.WriteLine(phrase.Contains("World"));
+ 			// Unlike, python, .contains works on strings
+
             Console.WriteLine(phrase[0]);
             Console.WriteLine(phrase.IndexOf("World")); // Return index number of given string/
             Console.WriteLine(phrase.IndexOf('W')); // Can also take a char
-            Console.WriteLine(phrase.Substring(6, 9)); // Start printing from specified index (start, stop)
+            Console.WriteLine(phrase.Substring(6)); // Start printing from specified index (start, stop)
 
             // Working with numbers
             Console.WriteLine(wholeNumber);
@@ -52,6 +53,28 @@ namespace FCC_Bootcamp
             Console.WriteLine(Math.Sqrt(6)); // Square root method
             Console.WriteLine(Math.Max(12, 69)); // Which number is higher. Math.Min also exists
             Console.WriteLine(Math.Round(4.3)); // Rounding
+
+            Console.WriteLine("-------------");
+            // Working with input
+            Console.Write("Enter name: "); //WriteLine always ends in a \n, Write does not
+            string name = Console.ReadLine();
+			Console.Write("Enter age: ");
+			string age = Console.ReadLine();
+            Console.WriteLine($"Hello {name}. You are {age} years old");
+
+			//String > int conversion
+			// Convert has a bunch of methods for different data types
+			int newNum = Convert.ToInt32("45");
+            Console.WriteLine(newNum);
+            System.Type type = newNum.GetType();
+            Console.WriteLine(type);
+
+            // Addition calculator via input
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a second number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Your answer is: {num1+num2}");
 
         }
     }
