@@ -56,11 +56,11 @@ namespace FCC_Bootcamp
 
             Console.WriteLine("-------------");
             // Working with input
-            Console.Write("Enter name: "); //WriteLine always ends in a \n, Write does not
-            string name = Console.ReadLine();
-			Console.Write("Enter age: ");
-			string age = Console.ReadLine();
-            Console.WriteLine($"Hello {name}. You are {age} years old");
+            // Console.Write("Enter name: "); //WriteLine always ends in a \n, Write does not
+            // string name = Console.ReadLine();
+			// Console.Write("Enter age: ");
+			// string age = Console.ReadLine();
+            // Console.WriteLine($"Hello {name}. You are {age} years old");
 
 			//String > int conversion
 			// Convert has a bunch of methods for different data types
@@ -70,12 +70,39 @@ namespace FCC_Bootcamp
             Console.WriteLine(type);
 
             // Addition calculator via input
-            Console.Write("Enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter a second number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"Your answer is: {num1+num2}");
+            // Console.Write("Enter a number: ");
+            // double num1 = Convert.ToDouble(Console.ReadLine());
+            // Console.Write("Enter a second number: ");
+            // double num2 = Convert.ToDouble(Console.ReadLine());
+            // Console.WriteLine($"Your answer is: {num1+num2}");
 
+            // Arrays
+            int[] luckyNumbers = {4, 1, 65, 23, 43};
+            //Easy way to print out a whole array in one line
+            Console.WriteLine(string.Join(',', luckyNumbers)); 
+            Console.WriteLine(luckyNumbers[0]);
+            luckyNumbers[0] = 900;
+            Console.WriteLine(luckyNumbers[0]);
+
+            // An empty string array. It still needs to be told how big the array should be though
+            // 0-2 is 3 items, so I've told the array to make 3 spaces. `new string[2]` would give
+            // a IndexOutOfRangeException error on `friends[2] = "Joe"` too.
+            string[] friends = new string[3];
+            friends[0] = "Isla";
+            friends[1] = "Connor";
+            friends[2] = "Joe";
+            //friends[3] = "Rowan"; System.IndexOutOfRangeException because too many items in array
+
+            // Calling methods
+            SayHi("Liliana");
+            SayHi("Elle");
+            SayHi("Linus");
+        }
+
+        // Creating new methods
+        static void SayHi(string name)
+        {
+            Console.WriteLine($"Hello {name}");
         }
     }
 }
