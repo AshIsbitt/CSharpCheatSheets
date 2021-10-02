@@ -132,6 +132,14 @@ namespace FCC_Bootcamp
                 Console.WriteLine(index);
                 index++;
             } while (index <= 5);
+
+            //FOR loop
+            for (int i = 0; i < luckyNumbers.Length; i++)
+            {
+                Console.WriteLine(luckyNumbers[i]);
+            }
+
+            Console.WriteLine($"Power is: {getPower(3,2)}");
         }
 
         // Creating new methods
@@ -187,6 +195,18 @@ namespace FCC_Bootcamp
             }
 
             return dayName;
+        }
+        
+        static int getPower(int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for (int i = 0; i < powNum; i++)
+            {
+                result = result * baseNum;   
+            }
+
+            return result;
         }
     }
 }
