@@ -140,7 +140,31 @@ namespace FCC_Bootcamp
             }
 
             Console.WriteLine($"Power is: {getPower(3,2)}");
-        }
+
+            // 2D arrays
+            // Note the comma in the square brackets `int[,]`
+            // You can add more dimensions with more commas
+            int[,] numberGrid = {
+                {1,2}, 
+                {3,4}, 
+                {5,6}
+            };
+
+            Console.WriteLine(numberGrid[0, 0]);
+
+            // Exception handling with try/catch
+            try {
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter a second number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine($"Your answer is: {num1 / num2}");
+            } catch (DivideByZeroException e){
+                Console.WriteLine($"Error: {e.Message}");
+            } finally {
+                Console.WriteLine("This prints at the end of a TRY/EXCEPT");
+            }
 
         // Creating new methods
         static void SayHi(string name)
