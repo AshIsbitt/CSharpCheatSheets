@@ -97,12 +97,85 @@ namespace FCC_Bootcamp
             SayHi("Liliana");
             SayHi("Elle");
             SayHi("Linus");
+
+            int cubedNum = Cube(5);
+            Console.WriteLine(cubedNum);
+
+            // IF statements
+            bool isMale = true;
+            bool isTall = true;
+            
+            if (isMale && isTall) // This is AND
+            {
+                Console.WriteLine("You are a tall male");
+            } else if (isMale || isTall) // This is OR
+            {
+                Console.WriteLine("You are male or tall");
+            } else
+            {
+                Console.WriteLine("You are either not male or not tall or both");
+            }
+
+            // Switch statement
+            Console.WriteLine($"Day: {GetDay(3)}");
+
+            // While Loops
+            
         }
 
         // Creating new methods
         static void SayHi(string name)
         {
             Console.WriteLine($"Hello {name}");
+        }
+
+        static int Cube(int num)
+        {
+            int result = num * num * num;
+            return result;
+        }
+
+        // Using switch statements
+        static string GetDay(int dayNum) 
+        {
+            string dayName;
+
+            switch(dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+
+                case 1:
+                    dayName = "Monday";
+                    break;
+
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+
+                case 4:
+                    dayName = "Thursday";
+                    break;
+
+                case 5:
+                    dayName = "Friday";
+                    break;
+
+                case 6:
+                    dayName = "Saturday";
+                    break;
+
+                default:
+                    dayName = "Invalid";
+                    break;
+            }
+
+            return dayName;
         }
     }
 }
