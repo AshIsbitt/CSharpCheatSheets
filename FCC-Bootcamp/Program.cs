@@ -166,6 +166,24 @@ namespace FCC_Bootcamp
                 Console.WriteLine("This prints at the end of a TRY/EXCEPT");
             }
 
+            // Creating objects and assigning attributes
+            Book myBook = new Book("Way of Kings", "Brandon Sanderson", 1001);
+            // myBook.title = "Way of Kings";
+            // myBook.author = "Brandon Sanderson";
+            // myBook.pageCount = 1001;
+
+            // Printing out object attributes
+            Console.WriteLine(myBook.title);
+            Console.WriteLine(myBook.author);
+
+            // Changing attributes
+            myBook.title = "Words of Radiance";
+            Console.WriteLine(myBook.title);
+
+
+
+        }
+
         // Creating new methods
         static void SayHi(string name)
         {
@@ -234,3 +252,4 @@ namespace FCC_Bootcamp
         }
     }
 }
+
