@@ -180,7 +180,15 @@ namespace FCC_Bootcamp
             myBook.title = "Words of Radiance";
             Console.WriteLine(myBook.title);
 
+            // Working with objet methods
+            Student Student1 = new Student("Harry Potter", "Science", 3.8);
+            Student Student2 = new Student("Ellie Winchester", "Music", 2.8);
 
+            Console.WriteLine(Student1.HasHonors());
+            Console.WriteLine(Student2.HasHonors());
+
+            // manipulating static attributes
+            Console.WriteLine(Student.studentCount);
 
         }
 
