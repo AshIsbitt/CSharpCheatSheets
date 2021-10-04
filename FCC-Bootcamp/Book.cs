@@ -15,9 +15,9 @@ namespace FCC_Bootcamp
         // I think this is like python's __init__
         public Book(string aTitle, string aAuthor, int aPages)
         {   
-            title = aTitle;
-            author = aAuthor;
-            pageCount = aPages;
+            this.title = aTitle;
+            this.author = aAuthor;
+            this.pageCount = aPages;
         }
 
         public string Title

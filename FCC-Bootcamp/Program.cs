@@ -195,6 +195,7 @@ namespace FCC_Bootcamp
 
             // Inherintance
             SpecFicBook cosmere = new SpecFicBook("Mistborn", "Brandon Sanderson", 780);
+            Console.WriteLine(cosmere.author);
         }
 
         // kCreating new methods
