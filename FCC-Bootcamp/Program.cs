@@ -180,7 +180,7 @@ namespace FCC_Bootcamp
             myBook.title = "Words of Radiance";
             Console.WriteLine(myBook.title);
 
-            // Working with objet methods
+            // Working with object methods
             Student Student1 = new Student("Harry Potter", "Science", 3.8);
             Student Student2 = new Student("Ellie Winchester", "Music", 2.8);
 
@@ -192,6 +192,9 @@ namespace FCC_Bootcamp
 
             // Static methods - methods that are on the class, not on the object
             UsefulTools.sayHi("Jayden");
+
+            // Inherintance
+            SpecFicBook cosmere = new SpecFicBook("Mistborn", "Brandon Sanderson", 780);
         }
 
         // kCreating new methods

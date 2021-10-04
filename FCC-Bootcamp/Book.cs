@@ -19,5 +19,11 @@ namespace FCC_Bootcamp
             author = aAuthor;
             pageCount = aPages;
         }
+
+        public string Title
+        {
+            get { return title; }
+            set { title = value;}
+        }
     }
 }
