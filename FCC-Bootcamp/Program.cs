@@ -190,9 +190,11 @@ namespace FCC_Bootcamp
             // manipulating static attributes
             Console.WriteLine(Student.studentCount);
 
+            // Static methods - methods that are on the class, not on the object
+            UsefulTools.sayHi("Jayden");
         }
 
-        // Creating new methods
+        // kCreating new methods
         static void SayHi(string name)
         {
             Console.WriteLine($"Hello {name}");
